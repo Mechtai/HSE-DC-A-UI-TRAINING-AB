@@ -1,0 +1,13 @@
+.O_Menu {
+  height: calc(100% - 80px - 70px);
+  overflow: hidden;
+}
+
+.O_Menu .scrollable {
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  height: 100%;
+  padding-right: 20px;
+  overflow-y: scroll;
+}

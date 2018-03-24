@@ -1,0 +1,78 @@
+.welcomeScreen {
+  width: 100%;
+  height: 100vh;
+}
+
+.welcomeScreen .fullScreenWrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeScreen .fullScreenWrapper:first-child .contentContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.welcomeScreen .fullScreenWrapper:last-child .contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 500px;
+}
+
+.welcomeScreen .fullScreenWrapper:first-child .rectangleWrapper {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  perspective: 500px;
+}
+
+.welcomeScreen .rectangle {
+  width: 30vw;
+  height: 100%;
+  background-color: green;
+  transition: all .6s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.welcomeScreen h1 {
+  display: inline-block;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 80px;
+  line-height: .76;
+  font-weight: bold;
+}
+
+.welcomeScreen:hover h1:first-child {
+  transform: translateX(-273px);
+}
+
+.welcomeScreen:hover h1:last-child {
+  transform: translateX(-204px);
+}
+
+.welcomeScreen[data-state="1"] .rectangle {
+  transform: rotateX(20deg) rotateY(-70deg) translateZ(4vw) translateX(15vw);
+}
+
+.welcomeScreen[data-state="2"] .rectangle {
+  transform: rotateX(50deg) rotateY(30deg) translateZ(3vw) translateX(-15vw);
+}
+
+.welcomeScreen[data-state="3"] .rectangle {
+  transform: rotateX(20deg) rotateY(70deg) translateZ(4vw) translateX(15vw) rotateY(80deg);
+}
