@@ -1,4 +1,4 @@
 .O_SearchBar {
   height: 70px;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid var(--gray);
 }

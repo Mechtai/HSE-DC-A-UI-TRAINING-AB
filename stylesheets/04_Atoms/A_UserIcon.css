@@ -1,0 +1,6 @@
+.A_UserIcon {
+  width: 36px;
+  height: 36px;
+  background-image: url(../../images/user.svg);
+  cursor: pointer;
+}

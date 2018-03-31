@@ -1,5 +1,13 @@
 .O_Menubar {
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
   height: 80px;
-  border-bottom: 1px solid #E6E6E6;
+  padding-left: 40px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.O_Menubar .left,
+.O_Menubar .right {
+  display: flex;
 }
