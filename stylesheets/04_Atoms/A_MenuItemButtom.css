@@ -1,0 +1,36 @@
+.O_MenuItem.active .A_MenuItemButtom span{
+  font-weight: 400;
+}
+
+.O_MenuItem.active .A_MenuItemButtom .icon  {
+  color: var(--primary);
+
+}
+
+.A_MenuItemButtom{
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  color: var(--text-gray);
+
+}
+
+.A_MenuItemButtom:hover{
+  background-color: var(--bg-gray);
+}
+
+.A_MenuItemButtom span {
+  font-family: var(--OpenSans);
+  font-size: 14px;
+  font-weight: 300;
+
+}
+
+.A_MenuItemButtom .icon {
+  width: 20px;
+  margin-left: 32px;
+  margin-right: 26px;
+
+}
