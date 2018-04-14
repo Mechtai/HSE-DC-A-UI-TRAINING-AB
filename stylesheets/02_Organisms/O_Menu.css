@@ -8,6 +8,14 @@
   box-sizing: border-box;
   width: 320px;
   height: 100%;
-  padding-right: 20px;
+
   overflow-y: scroll;
+}
+.O_Menu .scrollable > div{
+  padding: 10px 20px 10px 0;
+}
+
+
+.O_Menu .scrollable > div:not(:last-child) {
+  border-bottom: 1px solid var(--gray);
 }
